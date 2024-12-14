@@ -112,24 +112,24 @@ public class LiskovSubstitutionPrinciple {
     }
 
     public static void main(String[] args) {
-        List<Vehicle> list = new ArrayList<>();
-        list.add(new Motorcycle());
-        list.add(new Car());
-        list.add(new Bicycle());
+//        List<Vehicle> list = new ArrayList<>();
+//        list.add(new Motorcycle());
+//        list.add(new Car());
+//        list.add(new Bicycle());
+//
+//        for(Vehicle vehicle : list) {
+//            System.out.println(vehicle.getNumberOfWheels().toString()); // this will work
+//            System.out.println(vehicle.hasEngine()); // this will throw error at compile time only
+//        }
+//
+//        List<EngineVehicle> list1 = new ArrayList<>();
+//        list1.add(new Motorcycle());
+//        list1.add(new Car());
+//        list1.add(new Bicycle()); // this will throw error at compile time only
 
-        for(Vehicle vehicle : list) {
-            System.out.println(vehicle.getNumberOfWheels().toString()); // this will work
-            System.out.println(vehicle.hasEngine()); // this will throw error at compile time only
-        }
-
-        List<EngineVehicle> list1 = new ArrayList<>();
-        list1.add(new Motorcycle());
-        list1.add(new Car());
-        list1.add(new Bicycle()); // this will throw error at compile time only
-
-        for(EngineVehicle vehicle : list1) {
-            System.out.println(vehicle.hasEngine());
-        }
+//        for(EngineVehicle vehicle : list1) {
+//            System.out.println(vehicle.hasEngine());
+//        }
     }
 
 }
